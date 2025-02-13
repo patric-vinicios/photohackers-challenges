@@ -8,8 +8,7 @@ defmodule Smoke.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Smoke.Worker.start_link(arg)
-      # {Smoke.Worker, arg}
+      Smoke.EchoServer
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
